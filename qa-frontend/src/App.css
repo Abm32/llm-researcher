@@ -1,0 +1,84 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.qa-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.question-input:focus {
+  border-color: #007bff;
+}
+
+.submit-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.answer {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333333;
+}
+
+@media (max-width: 480px) {
+  .qa-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .submit-button, .question-input {
+    font-size: 14px;
+  }
+}
